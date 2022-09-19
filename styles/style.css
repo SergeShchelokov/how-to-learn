@@ -85,27 +85,20 @@ z-index: 5;
   z-index: 0;
 }
 
-
-
 .description {
+  margin-top: 100px;
   position: relative;
   display: flex;
   justify-content: center;
-
-
-
 }
+
 .two-columns {
   width: 80%;
   min-width: 784px;
   display: flex;
   justify-content: space-between;
-
   border: 2px solid red;
-
-
 }
-
 
 .two-columns__brief {
   width: 175px;
@@ -113,6 +106,7 @@ z-index: 5;
   font-size: 18px;
   font-weight: normal;
   line-height: 1.2;
+  color: #2f80ed;
   border: 2px solid red;
 }
 
@@ -134,8 +128,9 @@ z-index: 5;
 }
 
 .two-columns__span-accent {
-  font-weight: bold;
+  font-weight: 600;
 }
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
