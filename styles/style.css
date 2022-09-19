@@ -1,17 +1,11 @@
-/*#region ---Basics---*/
-.header__link {
-  color: #2f80ed;
-  text-decoration: none;
-}
 
 .page {
+  margin: 0 auto;
   min-width: 1100px;
   max-width: 1600px;
-  margin: 0 auto;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-
 }
-/*#endregion*/
+
 
 /*#region ---Header---*/
 .header {
@@ -20,24 +14,21 @@
   max-height: 756px;
   display: flex;
   position: relative;
-  border: 2px solid red;
   background-color: #f2f2f2;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
 }
-/*#endregion*/
 
 .logo {
   width: 228px;
   height: 32px;
-  background-image: url("../images/logo_place_header.svg");
+  background-image: url(../images/logo_place_header.svg);
 }
 
 .logo_place_header {
   position: absolute;
   left: 64px;
   top: 38px;
-  border: 2px solid red;
 }
 
 .header__title {
@@ -47,8 +38,12 @@ font-weight: 600;
 line-height: 96px;
 position: relative;
 left: 64px;
-border: 2px solid red;
 z-index: 5;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
 }
 
 .header__subtitle {
@@ -60,7 +55,6 @@ z-index: 5;
   position: absolute;
   left: 64px;
   bottom: 30px;
-  border: 2px solid red;
   z-index: 4;
 }
 
@@ -69,7 +63,6 @@ z-index: 5;
   position: absolute;
   right: 0px;
   bottom: 0px;
-  border: 2px solid red;
   z-index: 1;
 }
 
@@ -80,11 +73,11 @@ z-index: 5;
   right: 0px;
   top: 64px;
   background-color: #2f80ed;
-  background-position: right;
-  border: 2px solid red;
   z-index: 0;
 }
+/*#endregion*/
 
+/*#region ---Description---*/
 .description {
   margin-top: 100px;
   position: relative;
@@ -97,17 +90,15 @@ z-index: 5;
   min-width: 784px;
   display: flex;
   justify-content: space-between;
-  border: 2px solid red;
 }
 
 .two-columns__brief {
-  width: 175px;
   margin: 0px;
+  width: 175px;
   font-size: 18px;
   font-weight: normal;
   line-height: 1.2;
   color: #2f80ed;
-  border: 2px solid red;
 }
 
 .two-columns__main-text {
@@ -119,7 +110,6 @@ z-index: 5;
   font-size: 24px;
   font-weight: normal;
   line-height: 34px;
-  border: 2px solid red;
   margin-bottom: 30px;
 }
 
@@ -130,7 +120,81 @@ z-index: 5;
 .two-columns__span-accent {
   font-weight: 600;
 }
+/*#endregion*/
 
+/*#region ---Digits---*/
+/* ----mix-modificators-----*/
+.digits_theme_black{
+  background-color: black;
+  color: #f2f2f2;
+}
+
+.digits_theme_white{
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+
+.digits{
+  margin-top: 100px;
+}
+
+.section-title{
+  width: 60%;
+  margin: 0px auto;
+
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.section-subtitle{
+  width: 60%;
+  margin: 0px auto;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  text-align: center;
+}
+
+.table{
+  margin: auto;
+  width: 1100px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.table__cell{
+  margin-top: 60px;
+  width: 250px;
+}
+
+.table__heading {
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.15;
+  text-align: left;
+}
+
+.table__text{
+  margin: 0px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+  text-align: left;
+
+}
+
+.dark_theme {
+  width: 80%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
@@ -138,3 +202,4 @@ z-index: 5;
   margin-right: 0;
   margin-top: 80px;
 }
+/*#endregion*/
